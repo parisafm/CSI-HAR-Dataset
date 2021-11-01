@@ -1,7 +1,7 @@
 # CSI-HAR-Dataset
 A dataset for seven different daily human activities including sitdown, standup, liedown, run, walk,  fall and bend in an indoor environment.
 
-Paper: A CSI-Based Human Activity Recognition Using Deep Learning
+Paper: https://www.mdpi.com/1424-8220/21/21/7225/pdf
 
 Work by Parisa Fard Moshiri, Reza Shahbazian, Mohammad Nabati, and Seyed Ali Ghorashi
 
