@@ -252,10 +252,11 @@ model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy
 #if you want to train conv1d
 # model = Sequential()
 # model.add(Conv1D(filters=32, kernel_size=4,padding='same', activation='relu', input_shape=(n_timesteps,n_features),kernel_initializer='random_normal'))
-# model.add(Conv1D(filters=64, kernel_size=4,padding='same', activation='relu' ,kernel_initializer='random_normal'))
-# model.add(BatchNormalization())
-# model.add(Dropout(0.25))
 # model.add(MaxPooling1D(pool_size=2))
+# model.add(Dropout(0.25))
+# model.add(Conv1D(filters=64, kernel_size=4,padding='same', activation='relu' ,kernel_initializer='random_normal'))
+# model.add(MaxPooling1D(pool_size=2))
+# model.add(BatchNormalization())
 
 # model.add(Flatten())
 # model.add(Dense(128, activation='relu',kernel_regularizer = regularizers.l2(0.0001)))
