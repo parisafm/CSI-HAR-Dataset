@@ -10,4 +10,11 @@ Dataset Link:https://drive.google.com/drive/folders/1Qu8hfdQvygF1U0sB0MRdyLKCfbB
 The dataset will be updated after further experiments.
 
 The codes that are provided are just some examples for helping students. (Due to further studies, they may not be the exact model used in aforementioned paper)
+
 If you have any questions, Contact me by the email i added in codes.
+
+Lstm.py---> CNN1D , LSTM
+CNN.py---> CNN2D
+BLSTM.py---> Attention based BLSTM
+
+I edited the codes provided by ludlows on github
