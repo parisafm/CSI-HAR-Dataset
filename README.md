@@ -15,8 +15,11 @@ If you have any questions, Contact me by the email i added in codes.
 I edited the codes provided by ludlows on github
 
 Lstm.py = CNN1D , LSTM
+
 CNN.py = CNN2D
+
 BLSTM.py = Attention based BLSTM
+
 makeimage.m = simple example for making image from one data
 
 
