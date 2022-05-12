@@ -65,73 +65,17 @@ Classifier.add(Dense( 7, activation = 'softmax'))
 
 # Compiling the CNN
 opt = Adam(lr=0.0001)
-# cross_entropy = tf.reduce_sum(labels*tf.log(tf.clip_by_value(logits,1e-10,1.0))kullback_leibler_divergence)
 Classifier.compile(optimizer = opt, loss = 'categorical_crossentropy',
                    metrics=['accuracy'])
 
-# [metrics.mae, metrics.categorical_accuracy,metrics.categorical_crossentropy, metrics.binary_accuracy,metrics.top_k_categorical_accuracy,
 
 # Part 2 - Fitting the CNN to the images
  
 
 train_datagen = ImageDataGenerator( featurewise_center=False)
 
-# train_datagen = ImageDataGenerator(
-#                                     featurewise_center=False,
-#                                     samplewise_center=False,
-#                                     featurewise_std_normalization=False,
-#                                     samplewise_std_normalization=False,
-#                                     zca_whitening=False,
-#                                     zca_epsilon=1e-06,
-#                                     rotation_range=1,
-#                                     width_shift_range=0.0,
-#                                     height_shift_range=0.0,
-#                                     brightness_range=None,
-#                                     shear_range=0.2,
-#                                     zoom_range=0.2,
-#                                     channel_shift_range=0.0,
-#                                     fill_mode="nearest",
-#                                     cval=0.0,
-#                                     horizontal_flip=False,
-#                                     vertical_flip=False,
-#                                     rescale=1./255,
-#                                     preprocessing_function=None,
-#                                     data_format=None,
-#                                     validation_split=0.0,
-#                                     dtype=None)
-
-
 test_datagen = ImageDataGenerator( featurewise_center=False)
 
-# #test_datagen = ImageDataGenerator(
-#                                     featurewise_center=False,
-#                                     samplewise_center=False,
-#                                     featurewise_std_normalization=False,
-#                                     samplewise_std_normalization=False,
-#                                     zca_whitening=False,
-#                                     zca_epsilon=1e-06,
-#                                     rotation_range=0,
-#                                     width_shift_range=0.0,
-#                                     height_shift_range=0.0,
-#                                     brightness_range=None,
-#                                     shear_range=0.2,
-#                                     zoom_range=0.2,
-#                                     channel_shift_range=0.0,
-#                                     fill_mode="nearest",
-#                                     cval=0.0,
-#                                     horizontal_flip=False,
-#                                     vertical_flip=False,
-#                                     rescale=1.0/255,
-#                                     preprocessing_function=None,
-#                                     data_format=None,
-#                                     validation_split=0.0,
-#                                     dtype=None)
-
-
-# train_set = train_datagen.flow_from_directory(path_drive + '/Train',
-#                                               target_size = (64,64),
-#                                               batch_size = 32,
-#                                               class_mode = 'categorical', shuffle=True)
 
 
 train_set = train_datagen.flow_from_directory(path_drive + '//Train',
@@ -151,10 +95,6 @@ train_set = train_datagen.flow_from_directory(path_drive + '//Train',
 
 
 
-# test_set = test_datagen.flow_from_directory(path_drive + '/Test',
-#                                             target_size =(64,64),
-#                                             batch_size =32,
-#                                             class_mode ='categorical')
 
 
 test_set = test_datagen.flow_from_directory( path_drive + '//Test',
@@ -184,12 +124,6 @@ history = Classifier.fit_generator(train_set,
                                      callbacks=[checkpoint])
 
 
-# history = Classifier.fit_generator(train_set,
-#                                      samples_per_epoch = 250,
-#                                      nb_epoch = 180,
-#                                      validation_data = test_set,
-#                                      nb_val_samples = 189,
-#                                    callbacks=[checkpoint])
 
 
 #Save and serialize model structure to JSON
