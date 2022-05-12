@@ -11,8 +11,6 @@ The dataset will be updated after further experiments.
 
 The codes that are provided are just some examples for helping students. (Due to further studies, they may not be the exact model used in aforementioned paper)
 
-If you have any questions, Contact me by the email i added in codes.
-
 I edited the codes provided by ludlows on github
 
 Lstm.py = CNN1D , LSTM
@@ -22,5 +20,9 @@ CNN.py = CNN2D
 BLSTM.py = Attention based BLSTM
 
 makeimage.m = simple example for making image from one data
+
+libraries.txt = libraries versions (compatible for python 3.8.12)
+
+If you have any questions, Contact me by the email i added in codes.
 
 
