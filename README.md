@@ -29,7 +29,7 @@ libraries.txt = libraries versions (compatible for python 3.8.12, cudatoolkit= 1
 
 environment.yml = follow the instruction:
 
-1) create a new environment = conda -n create newenv
+1) create a new environment = conda create -n newenv
 2) copy .yml file in c:/users/pcname
 3) then update files on ur env from .yml file = conda env update --file environmentgpu.yml
 
