@@ -1,0 +1,4 @@
+name: gpu
+channels:
+  - defaults
+prefix: C:\Users\omen 15\anaconda3\envs\gpu
