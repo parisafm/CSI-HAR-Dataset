@@ -1,0 +1,5 @@
+@"
+BLSTM.py
+CNN.py
+Lstm.py
+"@ | Out-File -Encoding utf8 .gitignore
